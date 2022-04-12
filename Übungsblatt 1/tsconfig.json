@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+    "module": "ES2020", // Modulsystem: es2020
+    "target": "ES2021", // Zielformat: ECMAScript 2021
+    "sourceMap": true, // Komma nicht vergessen
+    "strict": true, // Strict-Modus aktivieren
+    "moduleResolution":"Node",
+    },
+    "files": [
+        "node_square_server.ts",    
+    ],
+    "exclude": [
+    "node_modules" // Dateien in diesem Ordner nicht compilieren
+    ]
+
+}
