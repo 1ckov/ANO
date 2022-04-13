@@ -17,11 +17,20 @@
 			"problemMatcher": [
 				"$tsc-watch"
 			],
+			"group": "build",
+			"label": "tsc: watch - Übungsblatt 1/tsconfig.json"
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "Übungsblatt 2/tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"label": "tsc: watch - Übungsblatt 1/tsconfig.json"
+			"label": "tsc: build - Übungsblatt 2/tsconfig.json"
 		}
 	]
 }

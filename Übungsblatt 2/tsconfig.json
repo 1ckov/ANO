@@ -4,11 +4,10 @@
     "target": "ES2021", // Zielformat: ECMAScript 2021
     "sourceMap": true, // Komma nicht vergessen
     "strict": true, // Strict-Modus aktivieren
-    "strictNullChecks": true,
     "moduleResolution":"Node",
     },
     "files": [
-        "node_square_server.ts",    
+        "node_ano_grade.ts",    
     ],
     "exclude": [
     "node_modules" // Dateien in diesem Ordner nicht compilieren
