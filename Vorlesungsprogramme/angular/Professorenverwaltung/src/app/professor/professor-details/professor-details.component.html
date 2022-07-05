@@ -1,0 +1,23 @@
+<span *ngIf="professor">
+  <h2>{{professor.fname}} {{professor.lname}} Details</h2>
+  <div>
+    <label for="fname">Firstname</label>
+    <input [(ngModel)]="professor.fname" id="fname" readonly="readonly">
+  </div>
+  <div>
+    <label for="lname">Lastname</label>
+    <input [(ngModel)]="professor.lname" id="lname" readonly="readonly">
+  </div>
+  <div>
+    <label for="shortel">Shortel</label>
+    <input [(ngModel)]="professor.shortel" id="shortel" readonly="readonly">
+  </div>
+  <div>
+    <label for="faculty">Lastname</label>
+    <input [(ngModel)]="professor.faculty" id="faculty" readonly="readonly">
+  </div>
+  <div>
+    <label for="room">Room</label>
+    <input [(ngModel)]="professor.room" id="room" readonly="readonly">
+  </div>
+</span>

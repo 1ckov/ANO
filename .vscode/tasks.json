@@ -26,11 +26,20 @@
 			"problemMatcher": [
 				"$tsc"
 			],
+			"group": "build",
+			"label": "tsc: build - Übungsblatt 2/tsconfig.json"
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "Übungsblatt 3/tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"label": "tsc: build - Übungsblatt 2/tsconfig.json"
+			"label": "tsc: build - Übungsblatt 3/tsconfig.json"
 		}
 	]
 }

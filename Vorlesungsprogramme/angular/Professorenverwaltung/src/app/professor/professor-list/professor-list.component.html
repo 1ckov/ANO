@@ -1,0 +1,48 @@
+<!--  Switch case
+<div [ngSwitch]="selektierterProf">
+  <p *ngSwitchCase="null">Kein Professor selektiert</p>
+  <p *ngSwitchCase="SPE"> Specht </p>
+  <p *ngSwitchDefault>Selektierter Professor: {{selektierterProf.kuerzel}}</p>
+</div>
+-->
+<!--  If/else - Remember GoTo from ps
+<app-professor-details *ngIf="selektierterProf else keinerausgewaehlt">
+</app-professor-details>
+<ng-template #keinerausgewaehlt>
+  <p>Kein Professor ausgewählt</p>
+</ng-template>
+-->
+<!--  For Loop
+  Version. 1
+<li *ngFor="let prof of professoren">{{prof.name}}</li>
+
+  Version 2 with keys:
+- keys are predefined: index:int, count:int, first:bool, last:bool, even:bool, odd:bool
+<li *ngFor="let prof of professoren; let i=index; let hervorheben=odd"> {{i,hervorheben}}</li>-->
+
+<h2> Professor list</h2>
+<table>
+  <tr>
+    <th>Nr. </th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Shortel</th>
+    <th>Faculty</th>
+  </tr>
+  <tr *ngFor="let prof of professors;let i=index"
+      (click)="selectProfessor(prof,$event)"
+      class="{{prof == selectedProfessor ? 'selected':''}}">
+    <td>{{i+1}}</td>
+    <td>{{prof.fname}}</td>
+    <td>{{prof.lname}}</td>
+    <td>{{prof.shortel}}</td>
+    <td>{{prof.faculty}}</td>
+    <button routerLink="../edit/{{prof.shortel}}">Edit</button>
+    <!-- This button triggers the delete in professor list component-->
+    <button (click)="delete(prof,$event)">Delete</button>
+  </tr>
+</table>
+<p>
+  <button routerLink="../create">Create</button>
+</p>
+<app-professor-details *ngIf="selectedProfessor" [professor]="selectedProfessor"></app-professor-details>

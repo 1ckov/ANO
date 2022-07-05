@@ -1,0 +1,15 @@
+<span *ngIf="faculty">
+  <h2>{{faculty.name}} Details</h2>
+  <div>
+    <label for="name">Name</label>
+    <input [(ngModel)]="faculty.name" id="name" readonly="readonly">
+  </div>
+  <div>
+    <label for="shortel">Shortel</label>
+    <input [(ngModel)]="faculty.shortel" id="shortel" readonly="readonly">
+  </div>
+  <div>
+    <label for="building">Building</label>
+    <input [(ngModel)]="faculty.building" id="building" readonly="readonly">
+  </div>
+</span>

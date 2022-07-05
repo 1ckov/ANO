@@ -1,0 +1,16 @@
+<h2>Create Faculty </h2>
+<form #facultycreate="ngForm" (ngSubmit)="save(faculty)">
+  <p>
+<label for="name">Name:</label>
+<input [(ngModel)]="faculty.name" id="name" name="name" placeholder="Name" required="required">
+
+<label for ="shortel">Shortel:</label>
+<input [(ngModel)]="faculty.shortel" id="shortel" name="shortel" placeholder="Shortel" required="required">
+
+<label for="building">Building:</label>
+<input [(ngModel)]="faculty.building" id="building" name="building" placeholder="Building">
+</p>
+<p>
+<button type="submit"[disabled]="!facultycreate.form.valid">Save</button>
+</p>
+</form>

@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+    "module": "ES2020", // Modulsystem: es2020
+    "target": "ES2021", // Zielformat: ECMAScript 2021
+    "sourceMap": true, // Komma nicht vergessen
+    "strict": true, // Strict-Modus aktivieren
+    "strictNullChecks": true,
+    "moduleResolution":"Node",
+    },
+    "files": [
+        "ano-client-management/main.ts", "ano-client-management/Sortieren.ts","ano-client-management/Client.ts" ,"ano-client-management/Adress.ts"
+    ],
+    "exclude": [
+    "node_modules" // Dateien in diesem Ordner nicht compilieren
+    ]
+
+}

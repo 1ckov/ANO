@@ -1,0 +1,7 @@
+<p *ngIf="!loginService.isLoggedIn()"> You have been logged out.
+  <button (click)="login()">Login</button>
+</p>
+<p *ngIf="loginService.isLoggedIn()">
+You Are logged in as '{{loginService.getLoginName()}}'.
+<button  (click)="logout()" >Logout</button>
+</p>

@@ -1,0 +1,18 @@
+<h2>Create Professor </h2>
+<form #professorcreate="ngForm" (ngSubmit)="save(professor)">
+  <p>
+<label for="fname">Last Name:</label>
+<input [(ngModel)]="professor.fname" id="fname" name="fname" placeholder="First name" required="required">
+<label for="lname">Last Name:</label>
+<input [(ngModel)]="professor.lname" id="lname" name="lname" placeholder="Last name" required="required">
+<label for ="shortel">Shortel:</label>
+<input [(ngModel)]="professor.shortel" id="shortel" name="shortel" placeholder="Shortel" required="required">
+<label for ="faculty">Faculty:</label>
+<input [(ngModel)]="professor.faculty" id="faculty" name="faculty" placeholder="Faculty" required="required">
+<label for="room">Room:</label>
+<input [(ngModel)]="professor.room" id="room" name="room" placeholder="Room">
+</p>
+<p>
+<button type="submit"[disabled]="!professorcreate.form.valid">Save</button>
+</p>
+</form>

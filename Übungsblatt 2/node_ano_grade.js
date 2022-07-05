@@ -3,6 +3,7 @@ var Semester;
     Semester["SS"] = "SS";
     Semester["WS"] = "WS";
 })(Semester || (Semester = {}));
+// A function which takes a assoc array and a Creteria(a labmda which returns true or false based on the input)
 function NotenFilter(array, kriterium) {
     let result = {};
     for (let key in array) {
